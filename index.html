@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Weekly Schedule</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="top">
+  <h1>Weekly Schedule: Work, Quran &amp; Rest</h1>
+  <p class="sub">Tap any block when you finish it to mark it ✓. Tap again to unmark.</p>
+  <div class="legend">
+    <span class="lg c-hifz ar" dir="rtl">حفظ جديد</span><span class="lg c-tath ar" dir="rtl">تثبيت</span><span class="lg c-rev ar" dir="rtl">مراجعة</span>
+    <span class="lg c-maq ar" dir="rtl">المقرأة</span><span class="lg c-work">Work</span><span class="lg c-rest">Food &amp; rest</span>
+    <span class="lg c-listen">Listening / video</span><span class="lg c-clean">Cleaning</span>
+  </div>
+  <div class="progress" id="progress"></div>
+</div>
+
+<div class="zoombar">
+  <button type="button" id="zout" aria-label="Zoom out">−</button>
+  <span class="pct" id="pct">100%</span>
+  <button type="button" id="zin" aria-label="Zoom in">+</button>
+  <button type="button" id="zfit">Fit</button>
+  <span class="tip">Pinch to zoom</span>
+</div>
+<div class="board" id="board">
+  <table class="tt" id="tt"></table>
+</div>
+
+<div class="wrap">
+  <p class="hint">Friday and Saturday times are approximate; the order is what matters.</p>
+  <button class="reset" id="reset" type="button">Clear this week's marks</button>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
